@@ -1,0 +1,190 @@
+/* Cremia's supplied reference: editorial columns, soft panels and pastry cutouts. */
+.cremia-case{background:#fdf9fa!important;padding-top:56px;padding-bottom:40px}
+.cremia-case:before{width:130%;height:570px;left:-15%;right:auto;top:29%;border-radius:50%;background:#fcecf1;transform:rotate(-6deg);opacity:.62}
+.cremia-case:after{width:140%;height:430px;left:-20%;top:68%;border-radius:50%;background:#fbeaf0;transform:rotate(7deg);opacity:.6}
+.cremia-case .case-inner{width:min(100% - 144px,1200px)}
+.cremia-case .case-hero{grid-template-columns:.94fr 1.16fr;gap:70px;padding-bottom:38px;align-items:start}
+.cremia-case .case-hero h2{font-size:60px;margin:14px 0 18px}
+.cremia-case .case-brief{margin-top:22px}
+.cremia-case .case-brief .case-fact{background:#ffffffa8;border:1px solid #f0e7eb;border-radius:12px;padding:18px 20px;margin-top:10px}
+.cremia-case .case-brief .case-fact p{margin:0;font-size:16px;line-height:1.45}
+.cremia-case .case-hero-visual{grid-template-columns:minmax(0,1fr) 110px;gap:22px 16px;padding-top:20px;padding-bottom:58px}
+.cremia-case .case-hero-visual>p:not(.case-handwriting){font-size:16px;line-height:1.5;max-width:94%}
+.cremia-case .cremia-hero-photo{transform:rotate(-3deg);border-radius:9px;box-shadow:0 8px 28px #65373513;position:relative}
+.cremia-case .cremia-hero-photo img{height:auto;aspect-ratio:1.15;object-fit:cover;object-position:center}
+.cremia-case .case-handwriting{font-size:34px!important;line-height:1.23!important;margin-top:38px;gap:1px;color:#b23f6b;transform:rotate(-7deg)}
+.cremia-case .cremia-strawberry-hero{right:-15px;bottom:0;width:240px;height:240px;transform:rotate(-9deg)}
+.cremia-case .case-stage{padding:28px 0}
+.cremia-case .case-stage-heading{gap:24px;margin-bottom:22px}
+.cremia-case .case-stage-heading h2{font-size:38px;line-height:1.15}
+.cremia-case .case-stage-heading p{font-size:16px;line-height:1.45;color:#716970;margin-top:7px}
+.cremia-case .case-number{font-size:40px}
+.cremia-case .case-overview{grid-template-columns:.85fr 1.6fr;gap:32px}
+.cremia-case .case-lead h3{font-size:34px;line-height:1.05;margin-bottom:12px}
+.cremia-case .case-lead p{font-size:17px;line-height:1.45}
+.cremia-case .case-facts{gap:14px}
+.cremia-case .case-fact{background:#faf4f6;border-color:#eee5e9;border-radius:9px;padding:20px 18px}
+.cremia-case .case-fact p{font-size:16px;line-height:1.45;margin:8px 0 0}
+.cremia-case .case-fact h3{font-size:14px;line-height:1.4}
+.cremia-case .case-takeaway{background:#fce8ef;padding:15px 20px;margin-top:22px;border-radius:0 8px 8px 0}
+.cremia-case .case-takeaway p{margin:0;font-size:16px;line-height:1.45}
+.cremia-case .case-two-columns{gap:24px}
+.cremia-case .case-panel,.cremia-case .b2b-process{border:1px solid #e8bacb;border-radius:11px;padding:24px;background:#fffafb}
+.cremia-case .case-panel>h3,.cremia-case .b2b-header h3{font-size:18px}
+.cremia-case .market-left{gap:20px}
+.cremia-case .report-gallery{padding:24px 8px 20px;gap:8px}
+.cremia-case .recommendations{background:#fffafc;padding:22px 24px}
+.cremia-case .decision-grid .case-fact:last-child{background:#a63b63;border-color:#a63b63}
+.cremia-case .case-learning{padding:28px;min-height:340px;background:linear-gradient(110deg,#ffeff5,#fff8fa);border-radius:11px}
+.cremia-case .case-learning-copy{max-width:78%}
+.cremia-case .case-learning-copy>p:not(.case-eyebrow){font-size:16px;max-width:85%}
+.cremia-case .case-learning h3{font-size:34px;line-height:1.1;margin:8px 0 12px;max-width:750px}
+.cremia-case .learning-note{border-radius:6px;padding:16px 18px;margin-top:12px;box-shadow:none;background:#fff}
+.cremia-case .learning-note p{font-size:15px;line-height:1.4}
+.cremia-case .cremia-walnut-learning{position:absolute;top:-28px;right:-70px;bottom:auto;width:40%;max-width:420px;height:calc(100% + 60px);margin:0;object-fit:contain;object-position:center;transform:rotate(-5deg);opacity:1;border-radius:0;mask-image:none;-webkit-mask-image:none}
+.cremia-case .nut-edge-top{top:26%;right:-125px;width:240px;height:250px;transform:rotate(-18deg)}
+.cremia-case .nut-edge-lower{top:77%;right:-120px;width:240px;height:250px;transform:rotate(12deg)}
+.cremia-case .cremia-botanical-edge{top:42%;left:-68px;width:235px;height:470px;opacity:1}
+@media(max-width:1100px){
+ .cremia-case .case-inner{width:calc(100% - 96px)}
+ .cremia-case .case-hero{gap:40px}
+ .cremia-case .case-hero-visual{grid-template-columns:minmax(0,1fr) 100px;column-gap:12px}
+ .cremia-case .case-handwriting{font-size:30px!important}
+ .cremia-case .cremia-strawberry-hero{width:195px;height:195px;right:-15px;bottom:-15px}
+ .cremia-case .case-overview{grid-template-columns:.8fr 1.6fr;gap:24px}
+ .cremia-case .case-fact{padding:18px 15px}
+ .cremia-case .cremia-botanical-edge{left:-94px;opacity:.75}
+ .cremia-case .cremia-walnut-learning{right:-75px;width:43%}
+}
+@media(max-width:900px){
+ .cremia-case .case-hero{grid-template-columns:1fr;gap:24px}
+ .cremia-case .case-hero-visual{width:min(100%,620px);grid-template-columns:minmax(0,1fr) 110px;justify-self:center;padding-top:0}
+ .cremia-case .case-handwriting{font-size:34px!important}
+ .cremia-case .cremia-strawberry-hero{width:215px;height:215px;right:-10px;bottom:-8px}
+}
+@media(max-width:800px){
+ .cremia-case{padding-top:40px}
+ .cremia-case .case-inner{width:calc(100% - 48px)}
+ .cremia-case .case-overview{grid-template-columns:1fr;gap:22px}
+ .cremia-case .case-two-columns{grid-template-columns:1fr;gap:20px}
+ .cremia-case .case-stage-heading h2{font-size:32px}
+ .cremia-case .case-number{font-size:34px}
+ .cremia-case .case-learning-copy{max-width:82%}
+ .cremia-case .cremia-walnut-learning{right:-80px;opacity:.85}
+ .cremia-case .nut-edge-top,.cremia-case .nut-edge-lower{right:-160px;opacity:.65}
+}
+@media(max-width:650px){
+ .cremia-case .case-inner{width:calc(100% - 40px)}
+ .cremia-case .case-hero{padding-bottom:18px}
+ .cremia-case .case-hero h2{font-size:48px}
+ .cremia-case .case-hero-visual{grid-template-columns:minmax(0,1fr) 94px;gap:20px 10px;padding-bottom:78px}
+ .cremia-case .cremia-hero-photo img{aspect-ratio:1.04}
+ .cremia-case .case-handwriting{font-size:29px!important;margin-top:26px}
+ .cremia-case .cremia-strawberry-hero{width:160px;height:160px;bottom:-6px;right:12px}
+ .cremia-case .case-stage{padding:26px 0}
+ .cremia-case .case-stage-heading{gap:14px;margin-bottom:20px}
+ .cremia-case .case-stage-heading h2{font-size:28px}
+ .cremia-case .case-number{font-size:29px}
+ .cremia-case .case-lead h3{font-size:30px}
+ .cremia-case .case-facts{grid-template-columns:1fr;gap:12px}
+ .cremia-case .decision-grid .case-facts{grid-template-columns:1fr 1fr}
+ .cremia-case .case-panel,.cremia-case .b2b-process{padding:22px 20px}
+ .cremia-case .case-learning{padding:22px 20px;min-height:0}
+ .cremia-case .case-learning-copy,.cremia-case .case-learning-copy>p:not(.case-eyebrow){max-width:100%}
+ .cremia-case .case-learning h3{font-size:30px}
+ .cremia-case .cremia-walnut-learning{position:relative;top:auto;right:auto;width:70%;height:auto;max-width:280px;margin:20px -25px -22px auto;transform:rotate(-5deg);opacity:1}
+ .cremia-case .cremia-botanical-edge{left:-125px;width:190px;height:370px;opacity:.45}
+ .cremia-case .nut-edge-top,.cremia-case .nut-edge-lower{right:-140px;width:185px;height:210px;opacity:.5}
+}
+@media(max-width:360px){
+ .cremia-case .case-inner{width:calc(100% - 32px)}
+ .cremia-case .case-hero-visual{grid-template-columns:minmax(0,1fr) 86px}
+ .cremia-case .case-handwriting{font-size:26px!important}
+ .cremia-case .cremia-strawberry-hero{width:140px;height:140px;right:8px}
+ .cremia-case .decision-grid .case-facts{grid-template-columns:1fr}
+}
+
+@media(min-width:901px) and (max-width:1100px){.cremia-case .cremia-strawberry-hero{right:98px}}
+@media(max-width:650px){.cremia-case .cremia-strawberry-hero{right:98px}}
+@media(max-width:360px){.cremia-case .cremia-strawberry-hero{right:88px}}
+
+/* Show the complete selected hero photograph without cropping the box. */
+.cremia-case .cremia-hero-photo img{height:auto;aspect-ratio:auto;object-fit:contain}
+
+/* Use the same project heading family as Lujos Panamá throughout the cases. */
+.case-study h2,.case-study h3,.case-study h4{font-family:Inter,sans-serif!important}
+
+/* Corrected market reference: chart and compact buyer process stacked left, iceberg right. */
+.cremia-case .market-stage .case-two-columns{display:grid;grid-template-columns:1.12fr 1fr;gap:50px;align-items:stretch}
+.cremia-case .market-stage .market-left{display:flex;flex-direction:column;justify-content:center;gap:40px;min-width:0}
+.cremia-case .market-stage .market-chart,.cremia-case .market-stage .b2b-process,.cremia-case .market-stage .iceberg-panel{grid-column:auto;grid-row:auto}
+.cremia-case .market-stage .iceberg-panel{min-height:880px;padding:30px}
+.cremia-case .iceberg-panel .case-list{font-size:17px;line-height:1.8}
+.cremia-case .iceberg-layout>svg{height:440px}
+.cremia-case .market-chart{padding:28px 30px;background:#fff}
+.cremia-case .market-chart>h3{font-size:17px;line-height:1.4;margin-bottom:22px}
+.cremia-case .market-chart dl{margin:0}
+.cremia-case .market-chart dl>div{display:block;margin:18px 0}
+.cremia-case .market-chart dt{font-size:13px;color:#89848a;margin-bottom:6px}
+.cremia-case .market-chart dd{display:flex;gap:12px;align-items:center;margin:0}
+.cremia-case .market-bar{width:calc(var(--bar) * .56);height:22px;flex-shrink:0;min-width:20px;background:#9e365a}
+.cremia-case .market-chart dl>div:nth-child(2) .market-bar{background:#d95787}
+.cremia-case .market-chart dl>div:nth-child(3) .market-bar{background:#e8adc2}
+.cremia-case .market-value{font:400 15px/1.35 Jost,sans-serif;color:#625b62;white-space:nowrap}
+.cremia-case .market-value strong,.cremia-case .market-value small{display:inline;font:inherit;color:inherit}
+.cremia-case .b2b-process{padding:24px;border-radius:18px;background:#fff6f8}
+.cremia-case .b2b-header{display:flex;gap:14px}
+.cremia-case .b2b-header h3{font-size:21px;line-height:1.2;margin-bottom:8px}
+.cremia-case .b2b-header p{font-size:14px;line-height:1.4}
+.cremia-case .b2b-header>span{display:block;max-width:94px;font-size:12px;line-height:1.4;margin:0}
+.cremia-case .b2b-steps{grid-template-columns:repeat(6,minmax(0,1fr));gap:8px;margin:24px 0}
+.cremia-case .b2b-steps li{gap:12px}
+.cremia-case .b2b-steps h4{font-size:12px;line-height:1.3;min-height:32px}
+.cremia-case .step-icon{width:42px;height:42px}
+.cremia-case .step-icon img{width:21px;height:21px}
+.cremia-case .b2b-steps p{font-size:13px;line-height:1.35}
+.cremia-case .step-arrow{display:block;top:64px;right:-10px;width:10px;height:10px}
+.cremia-case .b2b-insight{padding:20px 18px;min-height:0;margin-bottom:20px;border-left-width:7px;border-radius:4px 20px 20px 4px}
+.cremia-case .b2b-insight h4{font-size:18px;margin-bottom:12px}
+.cremia-case .b2b-insight p{font-size:16px;line-height:1.45;padding-right:0;padding-bottom:25px}
+.cremia-case .b2b-tart{position:absolute;float:none;right:14px;bottom:12px;width:94px;height:99px;margin:0}
+.cremia-case .b2b-source{font-size:12px;line-height:1.4;max-width:calc(100% - 88px);margin:0;padding:0;min-height:0}
+@media(max-width:1100px){.cremia-case .market-stage .case-two-columns{gap:26px;grid-template-columns:1.1fr 1fr}.cremia-case .market-stage .market-left{gap:26px}.cremia-case .market-chart{padding:24px}.cremia-case .market-stage .iceberg-panel{padding:24px;min-height:900px}.cremia-case .b2b-steps{grid-template-columns:repeat(3,minmax(0,1fr));gap:20px 14px}.cremia-case .b2b-steps h4{font-size:13px;min-height:34px}.cremia-case .b2b-steps p{font-size:14px}.cremia-case .step-arrow{display:none}.cremia-case .b2b-header{display:block}.cremia-case .b2b-header>span{max-width:none;margin-top:10px}.cremia-case .market-value{font-size:14px}.cremia-case .market-bar{width:calc(var(--bar) * .46)}}
+@media(max-width:800px){.cremia-case .market-stage .case-two-columns{grid-template-columns:1fr;gap:24px}.cremia-case .market-stage .market-left{gap:24px}.cremia-case .market-stage .iceberg-panel{min-height:0}.cremia-case .b2b-steps{grid-template-columns:repeat(3,minmax(0,1fr))}.cremia-case .b2b-header{display:flex}.cremia-case .b2b-header>span{max-width:120px;margin:0}.cremia-case .b2b-steps p{font-size:16px}.cremia-case .b2b-insight p{font-size:17px}.cremia-case .market-bar{width:calc(var(--bar) * .56)}}
+@media(max-width:650px){.cremia-case .b2b-header{display:block}.cremia-case .b2b-header h3{font-size:23px}.cremia-case .b2b-header>span{max-width:none;margin-top:10px}.cremia-case .b2b-steps{grid-template-columns:repeat(2,minmax(0,1fr));gap:22px 16px}.cremia-case .b2b-steps h4{font-size:14px}.cremia-case .step-icon{width:48px;height:48px}.cremia-case .b2b-tart{position:relative;float:right;right:auto;bottom:auto;margin:0 0 0 10px}.cremia-case .b2b-insight p{padding-bottom:0}.cremia-case .b2b-source{max-width:none;min-height:100px;padding-top:12px;font-size:13px}.cremia-case .market-chart{padding:22px 20px}.cremia-case .market-chart dd{gap:9px}.cremia-case .market-bar{width:calc(var(--bar) * .45)}.cremia-case .market-value{font-size:14px}.cremia-case .iceberg-layout>svg{height:330px}}
+
+/* Match the buyer-process reference and restore the actual icons. */
+.cremia-case .b2b-process{border:1.5px solid #ef558b;border-radius:20px;background:#fff6f8;padding:26px 28px 24px}
+.cremia-case .b2b-header h3{font-weight:800;font-size:21px;color:#9d3558;letter-spacing:-.02em}
+.cremia-case .b2b-header p{color:#737378;font-size:14px;line-height:1.4}
+.cremia-case .b2b-header>span{color:#e45888;font-size:12px;line-height:1.45}
+.cremia-case .b2b-steps{padding:0;margin:22px 0 24px;gap:10px}
+.cremia-case .b2b-steps li{display:flex;flex-direction:column;align-items:center;gap:14px;min-width:0}
+.cremia-case .b2b-steps h4{color:#a1375b;font-weight:700;font-size:12px;min-height:32px;margin:0}
+.cremia-case .step-icon{display:grid;place-items:center;width:44px;height:44px;background:#fff;border:1.4px solid #ee5689;border-radius:50%;margin:0}
+.cremia-case .step-icon img{display:block!important;width:22px;height:22px;object-fit:contain}
+.cremia-case .step-arrow{display:block;top:68px;right:-10px;width:11px;height:11px;opacity:1;filter:invert(45%) sepia(35%) saturate(1600%) hue-rotate(302deg) brightness(92%) contrast(90%)}
+.cremia-case .b2b-steps p{color:#171417;font-size:13px;line-height:1.4;margin:0}
+.cremia-case .b2b-insight{background:#f2d4df;border-left:8px solid #d95988;border-radius:4px 22px 22px 4px;padding:22px 20px;margin-bottom:22px}
+.cremia-case .b2b-insight h4{color:#9d3558;font-size:19px;font-weight:700;line-height:1.3;margin-bottom:14px}
+.cremia-case .b2b-insight p{font-size:16px;line-height:1.45;color:#5d5a60;padding-bottom:18px}
+.cremia-case .b2b-tart{width:102px;height:108px;right:14px;bottom:14px;filter:drop-shadow(2px 0 0 #f5d3df) drop-shadow(-2px 0 0 #fff) drop-shadow(0 -3px 0 #fff)}
+.cremia-case .b2b-source{font-size:12px;color:#8a8e95;line-height:1.4;max-width:calc(100% - 88px)}
+@media(max-width:1100px){.cremia-case .step-arrow{display:none}}
+@media(max-width:650px){.cremia-case .b2b-process{padding:24px 20px}.cremia-case .b2b-header h3{font-size:24px}.cremia-case .b2b-header p{font-size:16px}.cremia-case .b2b-steps h4{font-size:14px}.cremia-case .b2b-steps p{font-size:16px}.cremia-case .step-icon{width:54px;height:54px}.cremia-case .step-icon img{width:26px;height:26px}.cremia-case .b2b-insight p{font-size:17px;padding-bottom:0}.cremia-case .b2b-tart{position:relative;right:auto;bottom:auto;float:right}.cremia-case .b2b-source{max-width:none;font-size:13px}}
+
+/* Equal tracks keep wrapped headings, icons and descriptions aligned. */
+.cremia-case .b2b-steps li{display:grid;grid-template-rows:3.9em 44px auto;align-content:start;justify-items:center;gap:14px;font-size:12px}
+.cremia-case .b2b-steps h4{width:100%;min-height:0;height:100%;display:flex;align-items:flex-end;justify-content:center;text-align:center;overflow-wrap:anywhere;line-height:1.3}
+.cremia-case .b2b-steps p{width:100%;text-align:center;overflow-wrap:anywhere;align-self:start}
+.cremia-case .b2b-steps .step-icon{flex-shrink:0}
+.cremia-case .step-arrow{top:78px}
+@media(max-width:1100px){.cremia-case .b2b-steps li{font-size:13px}}
+@media(max-width:650px){.cremia-case .b2b-steps li{font-size:14px;grid-template-rows:3.9em 54px auto}}
+
+/* Short labels share the same two-line heading slot at every breakpoint. */
+.cremia-case .b2b-steps li{grid-template-rows:2.6em 44px auto}
+.cremia-case .b2b-steps h4{align-items:center;overflow-wrap:normal;word-break:normal}
+.cremia-case .b2b-steps p{line-height:1.4}
+.cremia-case .step-arrow{top:63px}
+@media(max-width:650px){.cremia-case .b2b-steps li{grid-template-rows:2.6em 54px auto}}

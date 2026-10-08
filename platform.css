@@ -1,0 +1,234 @@
+/* Preserve the portfolio's content and visual language on smaller screens. */
+*,*::before,*::after{box-sizing:border-box}
+.hero-grid>*,.about-grid>*,.case-hero>*,.case-overview>*,.case-two-columns>*,.case-work-grid>*,.branding-grid>*,.digital-row>*,.conversation-grid>*,.nco-hero>*,.nco-editorial-grid>*,.nco-article-cards>*,.nco-article-cards article>*,.nco-strategy-row>*,.nco-planning-row>*,.education-heading>*{min-width:0}
+.reference-container,.case-inner,.chapter-inner{overflow:visible!important}
+.case-study p,.reference-section p,.contact-details a{overflow-wrap:anywhere}
+.case-study img:not(.case-skidmark img):not(.case-wheel),.reference-section img{max-width:100%}
+.site-header .project-options{max-width:calc(100vw - 32px);max-height:calc(100dvh - var(--header-height,120px) - 24px);overflow-y:auto;overscroll-behavior:contain}
+.project-options a{min-height:44px}
+.lujos-case .publication-card{padding:0;border:0;border-radius:0;background:transparent;box-shadow:none;cursor:pointer;touch-action:manipulation}
+.lujos-case .publication-card.is-active,.lujos-case .publication-card:focus-visible{transform:translateX(-50%) translateY(-12px) rotate(0deg) scale(1.08);z-index:5;box-shadow:none}
+.lujos-case .publication-card:focus-visible{outline:3px solid var(--pink-ink);outline-offset:3px}
+.lujos-case .quotation-video{height:auto}
+@media(max-width:1100px){
+ .cremia-case .market-chart dd{flex-wrap:wrap;gap:8px}
+ .cremia-case .market-value{white-space:normal;min-width:0}
+ .nco-article-cards article{grid-template-columns:minmax(0,1fr)}
+ .nco-article-cards img{width:100%;height:220px;min-height:0;object-fit:cover}
+}
+@media(max-width:900px){
+ .cremia-case .market-stage .case-two-columns{grid-template-columns:minmax(0,1fr)}
+ .cremia-case .market-stage .iceberg-panel{min-height:0}
+ .cremia-case .market-stage .market-left{gap:24px}
+ .nco-editorial-grid{grid-template-columns:minmax(0,1fr)}
+ .nco-editorial-left .nco-lead{margin-bottom:24px}
+}
+@media(max-width:800px){
+ .site-header{background:var(--paper)!important}
+ .site-nav>a,.project-menu>summary{min-height:44px;display:flex;align-items:center}
+ .cremia-case .b2b-steps p{font-size:16px}
+ .iceberg-layout{grid-template-columns:minmax(0,1fr) minmax(80px,130px) minmax(0,1fr);gap:8px}
+ .iceberg-labels{min-width:0;overflow-wrap:anywhere}
+ .tool-card{flex-wrap:wrap}
+}
+@media(max-width:650px){
+ .site-nav>a,.project-menu>summary{font-size:13px!important;justify-content:center;padding:10px 2px}
+ .site-nav{gap:4px}
+ .project-menu .project-options{right:auto;left:50%;transform:translateX(-50%);min-width:220px}
+ .hero-disciplines{font-size:12px!important;line-height:1.6!important}
+ .hero-copy h1{font-size:clamp(48px,14vw,74px)}
+ .about-grid p,.section-intro,.process-card p,.method-card li,.education-insight p{font-size:16px!important;line-height:1.5}
+ .process-card h3,.method-card h3{font-size:15px}
+ .cremia-case .case-hero-visual{grid-template-columns:minmax(0,1fr) 88px}
+ .cremia-case .case-handwriting{max-width:100%!important;overflow-wrap:normal}
+ .cremia-case .cremia-hero-photo{margin-right:0!important}
+ .cremia-case .market-chart dd{display:flex;align-items:center;flex-wrap:wrap}
+ .cremia-case .market-bar{max-width:100%}
+ .cremia-case .b2b-insight p{padding:0}
+ .nco-case .nco-stage-heading h2{font-size:14px;line-height:1.5}
+ .nco-case .nco-disciplines,.nco-case .channel-topics,.nco-planning-panel h3{font-size:12px;line-height:1.6}
+ .nco-article-cards article{grid-template-columns:minmax(0,1fr)}
+ .nco-article-cards img{width:100%;height:auto;aspect-ratio:16/10;min-height:0}
+ .nco-learning-flow{flex-wrap:wrap;font-size:14px!important}
+ .result-totals{flex-wrap:wrap;gap:18px}
+ .result-bars{gap:8px}
+ .result-bars>div{min-width:0}
+ .result-bars>div>span:last-child{font-size:12px;line-height:1.35;overflow-wrap:anywhere}
+ .contact-details{flex-wrap:wrap}
+ .contact-details>div{min-width:0;max-width:100%}
+ .contact-details a{font-size:clamp(16px,4.6vw,19px)}
+ .contact-downloads summary{font-size:16px;min-height:58px}
+ .back-top{right:max(14px,env(safe-area-inset-right));bottom:max(14px,env(safe-area-inset-bottom))}
+}
+@media(max-width:420px){
+ .process-grid,.method-grid{grid-template-columns:minmax(0,1fr)}
+ .nco-summary{grid-template-columns:minmax(0,1fr)}
+ .cremia-case .decision-grid .case-facts{grid-template-columns:minmax(0,1fr)}
+ .iceberg-labels{font-size:13px}
+}
+@media(max-width:380px){
+ .site-nav{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 8px}
+ .project-menu>summary{width:100%}
+ .project-menu .project-options{left:auto;right:0;transform:none}
+ .cremia-case .case-hero-visual{grid-template-columns:minmax(0,1fr) 76px}
+ .cremia-case .case-handwriting{font-size:25px!important}
+}
+@media(prefers-reduced-motion:reduce){.lujos-case .publication-card{transition:none}}
+
+/* Shared brand rules apply at every viewport; breakpoints only resize/reflow. */
+:root{
+ --font-heading:Inter,sans-serif;
+ --font-body:Jost,sans-serif;
+ --font-handwriting:Caveat,'Segoe Print','Bradley Hand',cursive;
+ --brand-accent:#e94c83;
+ --brand-ink:#c9376a;
+ --brand-paper:#fffafb;
+ --brand-soft:#fff1f5;
+ --cremia-paper:#fdf9fa;
+ --pink:var(--brand-accent);
+ --pink-ink:var(--brand-ink);
+ --paper:var(--brand-paper);
+ --soft:var(--brand-soft);
+ color-scheme:light;
+}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+body{font-family:var(--font-body);background:var(--paper);color:#101010}
+.reference-section,.case-study,.chapter-transition{font-family:var(--font-heading)}
+.reference-section h1,.reference-section h2,.reference-section h3,.reference-section h4,
+.case-study h2,.case-study h3,.case-study h4,.chapter-inner h2{font-family:var(--font-heading)!important}
+.case-study p,.case-list,.recommendations li,.education-timeline p,.contact-card>p,.contact-footer{font-family:var(--font-body)}
+.brand,.site-nav>a,.project-menu>summary,.case-eyebrow,.contact-actions a,.contact-downloads summary{font-family:var(--font-heading)!important}
+.handwritten-notes,.notes-heart,.case-handwriting{font-family:var(--font-handwriting)!important;font-weight:400}
+.case-study{background:var(--paper)!important}
+.cremia-case{background:var(--cremia-paper)!important}
+.nco-case{background:var(--paper)!important}
+.education-insight{border-radius:22px;background:#fff0f5}
+.contact-card{border-radius:26px}
+.nco-case .nco-learning{border-radius:18px}
+
+/* Native SVG fills match the burgundy-pink numbers without device-dependent filters. */
+img[src^="assets/icons/"],.accent-icon,.google-icon,.step-icon img,.step-arrow{filter:none!important}
+.product-icon-row img[src^="assets/icons/"]{opacity:1}
+
+/* Recognizable Instagram app badge, shared by all screen sizes. */
+.nco-case .instagram-badge{background:radial-gradient(circle at 28% 100%,#ffd776 0%,#f7973c 20%,#ef315f 45%,#c72e9b 65%,#6554ca 100%);border-radius:7px}
+.nco-case .instagram-badge svg{display:block;width:100%;height:100%}
+
+/* Complete Marketplace mockup scales naturally, with no cropping or height cap. */
+.lujos-case .marketplace-image{display:block;width:100%;height:auto;max-width:100%;max-height:none;object-fit:contain;object-position:center;aspect-ratio:auto;margin:20px 0}
+
+/* Match the visual rows and the bottom of the adjacent Marketplace mockup. */
+.lujos-case .publication-comparison{--visual-ratio:2048 / 1366}
+.lujos-case .publication-comparison>.case-panel>h3{min-height:2.8em;line-height:1.4;margin:0}
+.lujos-case .publication-comparison .social-gallery{aspect-ratio:var(--visual-ratio);margin:20px 0 28px}
+.lujos-case .publication-comparison .marketplace-image{aspect-ratio:var(--visual-ratio);margin:20px 0 28px}
+.lujos-case .publication-comparison .publication-card{width:29%;height:auto;aspect-ratio:2 / 3;top:auto;bottom:var(--card-bottom);transform-origin:50% 90%}
+.lujos-case .publication-card:nth-child(1){--card-x:32%;--fan-angle:-28deg;--card-bottom:13.5%;--source-scale-x:1.08;--source-scale-y:1.02}
+.lujos-case .publication-card:nth-child(2){--card-x:43%;--fan-angle:-9deg;--card-bottom:12%;--source-scale-x:1.06;--source-scale-y:1.025}
+.lujos-case .publication-card:nth-child(3){--card-x:57%;--fan-angle:9deg;--card-bottom:12%;--source-scale-x:1;--source-scale-y:1}
+.lujos-case .publication-card:nth-child(4){--card-x:68%;--fan-angle:28deg;--card-bottom:13.5%;--source-scale-x:1.035;--source-scale-y:1.015}
+.lujos-case .social-gallery .publication-card img{transform:rotate(var(--source-correction)) scale(var(--source-scale-x),var(--source-scale-y))}
+@media(max-width:800px){.lujos-case .publication-comparison>.case-panel>h3{min-height:0}}
+
+/* One pivot and radius define the arc; card dimensions never vary. */
+.lujos-case .publication-comparison .social-gallery{--card-width:27%;--arc-pivot:168.5185%;aspect-ratio:2048 / 1366}
+.lujos-case .publication-comparison .social-gallery .publication-card{left:50%;top:22.1148%;bottom:auto;width:var(--card-width);height:auto;aspect-ratio:2 / 3;transform-origin:50% var(--arc-pivot);transform:translateX(-50%) rotate(var(--fan-angle))}
+.lujos-case .publication-comparison .publication-card:nth-child(1){--fan-angle:-27deg}
+.lujos-case .publication-comparison .publication-card:nth-child(2){--fan-angle:-9deg}
+.lujos-case .publication-comparison .publication-card:nth-child(3){--fan-angle:9deg}
+.lujos-case .publication-comparison .publication-card:nth-child(4){--fan-angle:27deg}
+@media(hover:hover) and (pointer:fine){.lujos-case .publication-comparison .social-gallery .publication-card:hover{transform:translateX(-50%) translateY(-12px) rotate(var(--fan-angle)) scale(1.08);z-index:5}}
+.lujos-case .publication-comparison .social-gallery .publication-card.is-active,.lujos-case .publication-comparison .social-gallery .publication-card:focus-visible{transform:translateX(-50%) translateY(-12px) rotate(var(--fan-angle)) scale(1.08);z-index:5}
+
+/* The six Lujos branding symbols use solid black on every device. */
+#branding .product-icon-row img{filter:brightness(0)!important;opacity:1}
+
+/* JS controls navigation timing; touch/wheel input can stop it immediately. */
+html.is-programmatic-scroll{scroll-behavior:auto!important}
+@media(hover:hover) and (pointer:fine) and (prefers-reduced-motion:no-preference){
+ .process-card,.method-card,.tool-card,.education-cards article,.nco-article-cards article{transition:translate 380ms ease,box-shadow 380ms ease}
+ .process-card:hover,.method-card:hover,.tool-card:hover,.education-cards article:hover,.nco-article-cards article:hover{translate:0 -5px;box-shadow:0 12px 28px #963b5714}
+ .expertise a,.contact-actions a,.contact-downloads summary{transition:background 300ms ease,transform 300ms ease,box-shadow 300ms ease}
+}
+@media(prefers-reduced-motion:no-preference){
+ .project-menu[open] .project-options{animation:project-menu-enter 340ms ease-out}
+ @keyframes project-menu-enter{from{opacity:0;translate:0 -8px}to{opacity:1;translate:0 0}}
+ .handwritten-notes{animation:notes-float 9s ease-in-out infinite}
+ @keyframes notes-float{0%,100%{translate:0 0}50%{translate:0 -6px}}
+}
+
+/* Navigation accents and quiet interactive feedback support exploration. */
+.site-nav>a::after,.project-menu>summary::after{content:'';position:absolute;left:0;right:0;bottom:4px;height:2px;background:var(--pink-ink);transform:scaleX(0);transform-origin:left;transition:transform 340ms ease}
+.site-nav>a:hover::after,.site-nav>a:focus-visible::after,.site-nav>a[aria-current]::after,.project-menu>summary:hover::after,.project-menu>summary:focus-visible::after{transform:scaleX(1)}
+.contact-downloads summary:active,.contact-actions a:active,.expertise a:active{transform:scale(.98)}
+@media(hover:hover) and (pointer:fine) and (prefers-reduced-motion:no-preference){
+ .subtle-scroll-image{translate:0 var(--image-drift,0px);will-change:auto}
+ .case-fact,.nco-channel{transition:box-shadow 360ms ease,translate 360ms ease}
+ .case-fact:hover,.nco-channel:hover{translate:0 -3px;box-shadow:0 10px 24px #963b5712}
+ .contact-downloads summary:hover{transform:translateY(-2px);box-shadow:0 6px 18px #963b5714}
+}
+@media(prefers-reduced-motion:reduce){.subtle-scroll-image{translate:none}.contact-downloads summary:active,.contact-actions a:active,.expertise a:active{transform:none}}
+
+/* The language selector shares the menu's typography and accent on every screen. */
+.language-switch{display:inline-flex;align-items:center;gap:2px;flex:none;border:1px solid #efb0c5;border-radius:999px;padding:3px;background:var(--paper);margin-left:8px}
+.language-switch button{appearance:none;cursor:pointer;font:500 14px/1.2 Inter,sans-serif;letter-spacing:0;color:var(--pink-ink);background:transparent;border:0;border-radius:999px;min-height:38px;padding:8px 12px;transition:background .25s,color .25s,box-shadow .25s}
+.language-switch button[aria-pressed="true"]{background:var(--pink-ink);color:#fff}
+.language-switch button:hover{box-shadow:inset 0 0 0 1px var(--pink-ink)}
+.language-switch button:focus-visible{outline:2px solid var(--pink-ink);outline-offset:3px}
+html[lang="en"] .education-heading h2{white-space:normal}
+html[lang="en"] .education-cards h3{overflow-wrap:break-word}
+@media(max-width:900px){.site-nav{flex-wrap:wrap}.language-switch{margin-left:0}.language-switch button{min-height:44px;padding:8px 10px}}
+@media(max-width:600px){.language-switch{margin:4px 0 0}.language-switch button{font-size:13px}.cremia-case .b2b-steps h4{overflow-wrap:normal}}
+@media(prefers-reduced-motion:reduce){.language-switch button{transition:none}}
+@media(max-width:1100px){body>.site-header .header-inner{flex-wrap:wrap}.site-nav{gap:16px;flex-wrap:wrap}}
+
+
+
+/* Keep Contact and the compact language controls together in the mobile menu. */
+.nav-contact-language{display:inline-flex;align-items:center;gap:8px;flex:none}
+.nav-contact-language>a{position:relative;display:flex;align-items:center;min-height:44px;padding:10px 0;font:600 13px/1.4 var(--font-heading);text-transform:uppercase;letter-spacing:.01em}
+.nav-contact-language>a::after{content:'';position:absolute;left:0;right:0;bottom:4px;height:2px;background:var(--pink-ink);transform:scaleX(0);transform-origin:left;transition:transform 340ms ease}
+.nav-contact-language>a:hover::after,.nav-contact-language>a:focus-visible::after,.nav-contact-language>a[aria-current]::after{transform:scaleX(1)}
+.language-short{display:none}
+.nav-contact-language .language-switch{margin:0}
+/* One shared row: equal vertical alignment, reserved space for Contact + ES/EN. */
+@media(max-width:650px){
+ body>.site-header .header-inner{padding-left:0;padding-right:0}
+ .site-nav{display:grid;grid-template-columns:1fr 1.15fr 1fr 1.85fr;gap:2px;align-items:center;width:100%;min-width:0}
+ .site-nav>a,.project-menu>summary,.nav-contact-language>a{font-size:clamp(11px,2.9vw,12px)!important;line-height:1.2;text-transform:none;letter-spacing:0;white-space:nowrap;min-height:44px;padding:0!important;justify-content:center}
+ .site-nav>a,.site-nav>.project-menu{min-width:0;margin:0}
+ .site-nav>.project-menu>summary{gap:3px}
+ .nav-contact-language{display:flex;justify-content:flex-end;align-items:center;gap:3px;min-width:0;justify-self:stretch;margin:0}
+ .nav-contact-language>a{flex:1 1 auto}
+ .language-full{display:none}
+ .language-short{display:inline}
+ .nav-contact-language .language-switch{display:inline-flex;flex:0 0 52px;width:52px;box-sizing:border-box;margin:0;padding:0;gap:0;border:1px solid #efb0c5;background:var(--paper);align-items:center}
+ .language-switch button{display:flex;align-items:center;justify-content:center;flex:1;min-width:0;width:25px;min-height:44px;padding:0;font-size:10px;line-height:1;margin:0}
+}
+
+/* Mobile navigation opens beneath the header without changing page spacing. */
+.mobile-menu-toggle{display:none}
+@media(max-width:800px){
+ body>.site-header .header-inner{display:flex;flex-direction:row;align-items:center;justify-content:space-between;flex-wrap:nowrap;gap:12px;padding:4px 0;min-height:48px}
+ .site-header .brand{justify-content:flex-start;min-width:0;font-size:clamp(12px,3.5vw,15px)}
+ .mobile-menu-toggle{display:inline-flex;align-items:center;justify-content:center;gap:10px;flex:none;min-height:44px;padding:8px 12px;border:1px solid #efb0c5;border-radius:999px;background:var(--paper);color:var(--pink-ink);font:600 13px/1.2 var(--font-heading);cursor:pointer}
+ .mobile-menu-toggle:focus-visible{outline:2px solid var(--pink-ink);outline-offset:3px}
+ .menu-lines{display:flex;flex-direction:column;justify-content:center;gap:4px;width:18px;height:20px}
+ .menu-lines i{display:block;width:18px;height:1.5px;border-radius:2px;background:currentColor;transition:transform 280ms,opacity 280ms}
+ .mobile-menu-open .menu-lines i:nth-child(1){transform:translateY(5.5px) rotate(45deg)}
+ .mobile-menu-open .menu-lines i:nth-child(2){opacity:0}
+ .mobile-menu-open .menu-lines i:nth-child(3){transform:translateY(-5.5px) rotate(-45deg)}
+ .site-header .site-nav{position:absolute;top:100%;left:16px;right:16px;width:auto;display:flex;flex-direction:column;align-items:stretch;justify-content:flex-start;gap:4px;padding:12px 16px 16px;background:var(--paper);border:1px solid #efb0c5;border-radius:0 0 18px 18px;box-shadow:0 14px 24px #963b571a;max-height:calc(100dvh - var(--header-height,80px) - 20px);overflow-y:auto;overscroll-behavior:contain}
+ .site-header .site-nav[hidden]{display:none!important}
+ .site-header .site-nav>a,.site-header .project-menu>summary,.site-header .nav-contact-language>a{font-size:14px!important;text-transform:uppercase;min-height:48px;padding:12px 8px!important;justify-content:flex-start;line-height:1.4}
+ .site-header .nav-contact-language{width:100%;justify-content:space-between;gap:16px;border-top:1px solid #f4dfe7;padding-top:6px}
+ .site-header .nav-contact-language>a{flex:none}
+ .site-header .language-switch{flex:0 0 110px;width:110px}
+ .site-header .language-switch button{font-size:13px;width:auto;min-height:44px;padding:8px 12px}
+ .site-header .language-full{display:none}
+ .site-header .language-short{display:inline}
+ .site-header .project-menu .project-options{position:static;transform:none;min-width:0;max-width:none;width:100%;max-height:none;margin:0;padding:4px 8px;background:#fff1f5;border-radius:12px;box-shadow:none}
+ .site-header .project-options a{min-height:44px;font-size:14px;padding:10px 12px}
+}
+@media(prefers-reduced-motion:reduce){.menu-lines i{transition:none}}
+@media(max-width:800px){.site-header .brand{flex:1;white-space:normal;line-height:1.25}.site-header .brand>span:last-child{min-width:0;overflow-wrap:normal}.site-header .brand-mark{flex:none}}
